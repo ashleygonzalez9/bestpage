@@ -1,0 +1,159 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+.wide-col {
+	height:100%;
+	width:65%;
+	background-color:#0D11A8;
+}
+
+/*
+.box {
+	height:100%;
+	width:cal(100%/3);
+	background-color:#0D11A8;
+}
+
+*/
+.narrow-col {
+	height:100%;
+	width:35%;
+	display:block;
+}
+
+@media screen and (max-width: 650px) { 
+	body{ 
+		height:100%;
+		width:100%;
+		display:block;
+	}
+	
+	.wide-col { 
+		width:100%;
+		height:65%;
+	} 
+	
+	
+	.narrow-col{ 
+		height:100%;
+		width:100%;
+		display:flex;
+	}
+	
+	
+	.red-top{
+		width:50%;
+		height:100%;
+	} 
+	
+	.yellow-bottom{
+		width:50%;
+		height:100%;
+		
+	} 
+
+
+}
+
+@media screen and (max-width: 600px) { 
+	body{ 
+	
+	display:block;
+	} 
+	.narrow-col {
+		display:flex;
+		height:100%;
+		width:100%;
+	} 
+
+	
+	.red-top{
+		width:50%;
+		height:100%;
+	} 
+	
+	.yellow-bottom{
+		width:50%;
+		height:100%;
+		
+	} 
+
+
+
+} 
+
+@media screen and (max-width: 550px) { 
+	body{ 
+	
+	display:block;
+	} 
+	
+	.narrow-col {
+		display:block;
+		height:100%;
+		width:100%;
+	} 
+	
+	
+	.red-top{
+		width:100%;
+		height:100%;
+	} 
+	
+	.yellow-bottom{
+		width:100%;
+		height:100%;
+		
+	} 
+	
+} 
+
+
+
+
+
+.red-top {
+	height:50%;
+	width:100%;
+	background-color: #F50F0F;
+} 
+
+.yellow-bottom {
+	height:50%;
+	width:100%;
+	background-color: #FAE317;
+} 
+.box {
+	height:50%;
+	width:100%;
+	background-color:#0D11A8;
+}
+
+.blue {background-color: #0D11A8;}
+.red {background-color: #F50F0F;}
+.yellow {background-color: #FAE317;}
+
+
+/* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+/* If you're using 'display: flex' this class can be used to easily center horizontally! */
+.center-horizontal {
+	align-items: center;	
+	display:flex;
+	
+}
+
+/* If you're using 'display: flex' this class can be used to easily center vertically! */
+.center-vertical {
+	justify-content: center;
+	display: flex;
+}
+
+/* Keep your image from overflowing it's parent DIV */
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
