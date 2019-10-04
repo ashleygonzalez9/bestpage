@@ -3,12 +3,14 @@ body {
 	height: 100%;
 	margin: 0;
 	display: flex;
+	background-color:#b1c8f0;
 }
 
 .wide-col {
 	height:100%;
 	width:65%;
-	background-color:#0D11A8;
+	background-color:#b1c8f0;
+
 }
 
 /*
@@ -24,6 +26,21 @@ body {
 	width:35%;
 	display:block;
 }
+
+.box1{
+		width:100%;
+		height:50%;
+		background-color: #c2a6ff;
+	} 
+	
+.box2{
+		width:100%;
+		height:50%;
+		background-color: #fdffb5;
+	} 
+
+
+
 
 @media screen and (max-width: 650px) { 
 	body{ 
@@ -45,12 +62,12 @@ body {
 	}
 	
 	
-	.red-top{
+	.box1{
 		width:50%;
 		height:100%;
 	} 
 	
-	.yellow-bottom{
+	.box2{
 		width:50%;
 		height:100%;
 		
@@ -71,12 +88,12 @@ body {
 	} 
 
 	
-	.red-top{
+	.box1{
 		width:50%;
 		height:100%;
 	} 
 	
-	.yellow-bottom{
+	.box2{
 		width:50%;
 		height:100%;
 		
@@ -99,12 +116,12 @@ body {
 	} 
 	
 	
-	.red-top{
+	.box1{
 		width:100%;
 		height:100%;
 	} 
 	
-	.yellow-bottom{
+	.box2{
 		width:100%;
 		height:100%;
 		
@@ -113,29 +130,10 @@ body {
 } 
 
 
-
-
-
-.red-top {
-	height:50%;
-	width:100%;
-	background-color: #F50F0F;
-} 
-
-.yellow-bottom {
-	height:50%;
-	width:100%;
-	background-color: #FAE317;
-} 
-.box {
-	height:50%;
-	width:100%;
-	background-color:#0D11A8;
-}
-
 .blue {background-color: #0D11A8;}
 .red {background-color: #F50F0F;}
-.yellow {background-color: #FAE317;}
+.yellow {background-color: #fdffb5;}
+.purple { background-color: #c2a6ff;} 
 
 
 /* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
@@ -154,6 +152,6 @@ body {
 
 /* Keep your image from overflowing it's parent DIV */
 .contain-image {
-	max-height: 75%;
-	max-width: 75%;
+	max-height: 80%;
+	max-width: 80%;
 }
